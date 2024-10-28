@@ -42,8 +42,8 @@ void draw_animation(lv_obj_t *canvas) {
     srand(k_uptime_get_32());
     int random_index = rand() % length;
 
-    // lv_img_set_src(art, anim_imgs[random_index]);
-    lv_img_set_src(art, &mountain);
+    lv_img_set_src(art, anim_imgs[random_index]);
+    // lv_img_set_src(art, &mountain);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
