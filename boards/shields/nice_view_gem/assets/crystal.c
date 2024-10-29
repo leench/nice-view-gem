@@ -1184,6 +1184,11 @@ const lv_img_dsc_t mountain = {
     .data = mountain_map,
 };
 
+
+#ifndef LV_ATTRIBUTE_IMG_DUO_FOOT
+#define LV_ATTRIBUTE_IMG_DUO_FOOT
+#endif
+
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_DUO_FOOT uint8_t
     duo_foot_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
