@@ -19,6 +19,7 @@ LV_IMG_DECLARE(crystal_14);
 LV_IMG_DECLARE(crystal_15);
 LV_IMG_DECLARE(crystal_16);
 LV_IMG_DECLARE(mountain);
+LV_IMG_DECLARE(duo_foot);
 
 const lv_img_dsc_t *anim_imgs[] = {
     &crystal_01, &crystal_02, &crystal_03, &crystal_04, &crystal_05, &crystal_06,
