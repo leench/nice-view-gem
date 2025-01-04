@@ -137,7 +137,7 @@ ZMK_SUBSCRIPTION(widget_layer_status, zmk_layer_state_changed);
 static void set_output_status(struct zmk_widget_screen *widget,
                               const struct output_status_state *state) {
     widget->state.selected_endpoint = state->selected_endpoint;
-    widget->state.active_profile_index = state->active_profile_index;
+    // widget->state.active_profile_index = state->active_profile_index;
     widget->state.active_profile_connected = state->active_profile_connected;
     widget->state.active_profile_bonded = state->active_profile_bonded;
 
