@@ -155,7 +155,7 @@ static void output_status_update_cb(struct output_status_state state) {
 static struct output_status_state output_status_get_state(const zmk_event_t *_eh) {
     return (struct output_status_state){
         .selected_endpoint = zmk_endpoints_selected(),
-        //.active_profile_index = zmk_ble_active_profile_index(),
+        .active_profile_index = zmk_ble_active_profile_index(),
         .active_profile_connected = zmk_ble_active_profile_is_connected(),
         .active_profile_bonded = !zmk_ble_active_profile_is_open(),
     };
@@ -221,7 +221,7 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
     widget_layer_status_init();
-    widget_output_status_init();
+    //widget_output_status_init();
     widget_wpm_status_init();
 
     return 0;
