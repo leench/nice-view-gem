@@ -46,7 +46,8 @@ void draw_animation(lv_obj_t *canvas) {
 
     // lv_img_set_src(art, anim_imgs[random_index]);
 #if IS_ENABLED(CONFIG_NICE_VIEW_MAIN_ON_LEFT)
-    lv_img_set_src(art, &duo_left_foot);
+    //lv_img_set_src(art, &duo_left_foot);
+    lv_img_set_src(art, anim_imgs[random_index]);
 #else
     lv_img_set_src(art, &duo_right_foot);
 #endif
