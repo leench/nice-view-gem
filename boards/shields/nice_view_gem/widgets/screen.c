@@ -108,9 +108,11 @@ ZMK_SUBSCRIPTION(widget_battery_status, zmk_usb_conn_state_changed);
  * Layer status
  **/
 
-static void set_layer_status(struct zmk_widget_screen *widget, struct layer_status_state state) {
-    widget->state.layer_index = state.index;
-    widget->state.layer_label = state.label;
+static void set_layer_status(struct zmk_widget_screen *widget) {
+    // widget->state.layer_index = state.index;
+    // widget->state.layer_label = state.label;
+    widget->state.layer_index = 0;
+    widget->state.layer_label = "DUO";
 
     draw_bottom(widget->obj, widget->cbuf3, &widget->state);
 }
