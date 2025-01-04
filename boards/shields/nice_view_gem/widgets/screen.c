@@ -19,8 +19,8 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/wpm.h>
 
 #include "battery.h"
-#include "layer.h"
-#include "output.h"
+//#include "layer.h"
+//#include "output.h"
 #include "profile.h"
 #include "screen.h"
 #include "wpm.h"
@@ -107,7 +107,7 @@ ZMK_SUBSCRIPTION(widget_battery_status, zmk_usb_conn_state_changed);
 /**
  * Layer status
  **/
-
+/*
 static void set_layer_status(struct zmk_widget_screen *widget) {
     // widget->state.layer_index = state.index;
     // widget->state.layer_label = state.label;
@@ -131,11 +131,12 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_layer_status, struct layer_status_state, laye
                             layer_status_get_state)
 
 ZMK_SUBSCRIPTION(widget_layer_status, zmk_layer_state_changed);
+*/
 
 /**
  * Output status
  **/
-
+/*
 static void set_output_status(struct zmk_widget_screen *widget,
                               const struct output_status_state *state) {
     widget->state.selected_endpoint = state->selected_endpoint;
@@ -171,6 +172,7 @@ ZMK_SUBSCRIPTION(widget_output_status, zmk_usb_conn_state_changed);
 #if defined(CONFIG_ZMK_BLE)
 ZMK_SUBSCRIPTION(widget_output_status, zmk_ble_active_profile_changed);
 #endif
+*/
 
 /**
  * WPM status
