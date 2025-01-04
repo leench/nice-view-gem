@@ -7,14 +7,14 @@ void draw_layer_status(lv_obj_t *canvas, const struct status_state *state) {
     init_label_dsc(&label_dsc, LVGL_FOREGROUND, &pixel_operator_mono, LV_TEXT_ALIGN_CENTER);
 
     char text[10] = {};
-/* 
+
     if (state->layer_label == NULL) {
         sprintf(text, "Layer %i", state->layer_index);
     } else {
         strcpy(text, state->layer_label);
         to_uppercase(text);
     }
- */
-    sprintf(text, "Duo")
+ 
+    //sprintf(text, "Duo")
     lv_canvas_draw_text(canvas, 0, 146 + BUFFER_OFFSET_BOTTOM, 68, &label_dsc, text);
 }
